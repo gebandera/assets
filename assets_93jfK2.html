@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Image</title>
-
-  <meta name="robots" content="noindex, nofollow">
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-  <!-- WebFX Script -->
-  <script src="https://www.magicwebfx.com/u/script.php?user=gebandera&class=mwfx"></script>
-
-  <style>
-    body {
-      margin: 0;
-      background: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent; 
+        }
+        #webfx-prediction-container {
+            width: 100%;
+            text-align: center;
+        }
+        /* Ensures the card image fits nicely on mobile screens */
+        #webfx-prediction img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
 
-  <img
-    src="https://www.magicwebfx.com/u/image.php?user=gebandera"
-    class="mwfx"
-    alt=""
-  >
+    <div id="webfx-prediction-container">
+        <div id="webfx-prediction"></div>
+    </div>
+
+    <script src="https://webfx.app/js/52496_b3e752968848f4316694.js"></script>
 
 </body>
 </html>
